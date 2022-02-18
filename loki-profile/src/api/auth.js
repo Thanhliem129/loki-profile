@@ -8,5 +8,5 @@ export const _getUser = async (body) => {
 
 export const _signUp = async (body) => {
 const request = await axios.post(`${urlBase}/user`,body);
-return request.data;
+return window.location.replace('/');
 };

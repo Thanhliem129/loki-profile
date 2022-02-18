@@ -1,14 +1,14 @@
 import axios from "axios";
 const urlBase ='https://620cf2e9b5736325939f99f1.mockapi.io'
 // posts
-export const _getPosts = async () => {
-  const request = await axios.get(`${urlBase}/user/1/posts`);
+export const _getPosts = async (userID) => {
+  const request = await axios.get(`${urlBase}/user/${userID}/posts`);
 //   console.log(request.data)
   return request.data;
 };
 
-export const _postPosts = async (body) => {
-    const request = await axios.post(`${urlBase}/user/1/posts`, body);
+export const _postPosts = async (userId, body) => {
+    const request = await axios.post(`${urlBase}/user/${userId}/posts`, body);
     return request.data;
 }
 

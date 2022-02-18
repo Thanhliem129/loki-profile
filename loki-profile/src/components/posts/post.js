@@ -1,18 +1,26 @@
 import React, {useState, useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 import { getPosts } from '../../redux/posts/action'
 
 const Posts = () => {
     const dispatch = useDispatch();
     const listPosts = useSelector((store) => store.posts.listPosts)
-
+    const currentUser = localStorage.getItem('user')
+    const userId = currentUser.id
     useEffect(()=>{
-        dispatch(getPosts())
+        dispatch(getPosts(userId))
     },[])
     console.log(listPosts)
     return(
         <div>
             posts
+            <div>
+                <Link to='/add-posts'>
+                    <button className='btn btn-primary'>thêm bài viết</button>
+                </Link>
+                
+            </div>
         </div>
     )
 }

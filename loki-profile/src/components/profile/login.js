@@ -1,22 +1,39 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { signUp } from '../../redux/auth/action'
+import { useDispatch, useSelector } from 'react-redux'
+import { getUser } from '../../redux/auth/action'
 
-const SignUp = () => {
+const Login = () => {
     const dispatch = useDispatch()
 
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
-    const [location, setLocation] = useState(false)
+    const listUser = useSelector((store) => store.auth.listUser)
 
-    const handleSignUp = () => {
+    const handleLogin = () => {
         const body = {
             name: name,
             password: password,
-            image: 'https://i.pinimg.com/736x/64/81/22/6481225432795d8cdf48f0f85800cf66.jpg'
         }
-        dispatch(signUp(body))
+        if(listUser){
+            const user = listUser.filter(function (e) {
+               return (e.name == body.name && e.password == body.password)
+            })
+            if(user.length > 0){
+                const currentUser = user[0]
+                localStorage.setItem('user', JSON.stringify(currentUser))
+                setTimeout(() => {
+                    window.location.href = `/`
+                }, 200);
+            }
+            else{
+                console.log('sai')
+            }
+        }
     }
+
+    useEffect(()=> {
+        dispatch(getUser())
+      },[])
     return (
         <div>
             <div>
@@ -41,10 +58,10 @@ const SignUp = () => {
                 />
             </div>
             <div>
-                <button className='btn btn-primary' onClick={handleSignUp}>Đăng ký</button>
+                <button className='btn btn-primary' onClick={handleLogin}>Đăng nhập</button>
             </div>
         </div>
     )
 }
 
-export default SignUp;
+export default Login;
