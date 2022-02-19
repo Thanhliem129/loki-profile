@@ -3,34 +3,46 @@ import { Link } from 'react-router-dom'
 
 
 const Header = () => {
-    const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")));
+    const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("userLokiProfile")));
     const handleLogout = () => {
-        localStorage.removeItem('user');
+        localStorage.removeItem('userLokiProfile');
         setTimeout(() => {
             window.location.href = `/`
         }, 200);
     }
     return (
-        <div className='container'>
-            <div className='bg-info'>
-                <nav className="nav nav-tabs nav-stacked">
-                    <Link className="nav-link active" to="/">Home page</Link>
-                    {
-                        currentUser && <Link className="nav-link" to="/posts">Post</Link>
-                    }
-                    {
-                       currentUser &&  <Link className="nav-link " to="/profile">Profile</Link>
-                    }
-                    {
-                       !currentUser &&  <Link className="nav-link " to="/login">Login</Link>
-                    }
-                   
-                    {
-                        !currentUser && <Link className="nav-link " to="/sign-up">Sign up</Link>
-                    }
-                    {
-                        currentUser && <button className='btn btn-info' onClick={handleLogout}>LogOut</button>
-                    }
+        <div className='bg-info'>
+            <div className='container'>
+                <nav className="nav nav-tabs nav-stacked justify-content-between">
+                    <div className='d-flex'>
+                        <Link className="nav-link text-white" to="/">Home page</Link>
+                        {
+                            currentUser && (
+                                <div className='d-flex'>
+                                    <Link className="nav-link text-white" to="/posts">Post</Link>
+                                    <Link className="nav-link text-white" to="/profile">Profile</Link>
+                                </div>
+                                
+                            )
+                        }
+                    </div>
+                    <div className='d-flex'>
+                        {
+                            !currentUser &&  <Link className="nav-link text-white " to="/login">Login</Link>
+                        }
+                        {
+                            !currentUser && <Link className="nav-link  text-white" to="/sign-up">Sign up</Link>
+                        }
+                        {
+                            currentUser && (
+                                <div className='d-flex'>
+                                    <button className='btn btn-info text-white' onClick={handleLogout}>LogOut</button>
+                                </div>
+                                
+                            )
+                        }
+                    </div>
+                    
                     
                 </nav>
             </div>

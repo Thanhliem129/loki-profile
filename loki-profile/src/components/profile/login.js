@@ -20,7 +20,7 @@ const Login = () => {
             })
             if(user.length > 0){
                 const currentUser = user[0]
-                localStorage.setItem('user', JSON.stringify(currentUser))
+                localStorage.setItem('userLokiProfile', JSON.stringify(currentUser))
                 setTimeout(() => {
                     window.location.href = `/`
                 }, 200);
@@ -37,7 +37,7 @@ const Login = () => {
     return (
         <div>
             <div>
-                đăng ký tài khoản
+                Đăng nhập
             </div>
             <div>
                 <label className='col-form-label'>Tên tài khoản</label>

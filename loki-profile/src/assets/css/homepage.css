@@ -1,0 +1,66 @@
+.homepage{
+  
+  
+}
+.header{
+  background-image: url("https://i.pinimg.com/originals/2c/84/5a/2c845a66b8ad2a8aafd288bdc16cd459.jpg");
+  background-color: #cccccc;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-attachment: fixed;
+}
+.name-title{
+  font-size: 100px;
+  letter-spacing: 15px;
+}
+.my-majoy{
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.middle{
+  background-image: url("https://freenice.net/wp-content/uploads/2021/12/hinh-nen-4k-laptop-sieu-nhan-nguoi-nhen-spider-man.jpg");
+  background-color: #cccccc;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about-me-image{
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+.about-title{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+
+}
+.about-content{
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn-connect{
+  background-color: aqua;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  transition: 0.5s;
+}
+.btn-connect:hover{
+  background-color: transparent;
+  color: #fff;
+  transition: 0.5s;
+  box-shadow: 0px 0px 30px cyan;
+}

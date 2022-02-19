@@ -6,12 +6,11 @@ import { getPosts } from '../../redux/posts/action'
 const Posts = () => {
     const dispatch = useDispatch();
     const listPosts = useSelector((store) => store.posts.listPosts)
-    const currentUser = localStorage.getItem('user')
+    const currentUser = localStorage.getItem('userLokiProfile')
     const userId = currentUser.id
     useEffect(()=>{
         dispatch(getPosts(userId))
     },[])
-    console.log(listPosts)
     return(
         <div>
             posts

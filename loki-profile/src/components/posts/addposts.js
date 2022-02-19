@@ -9,7 +9,7 @@ const AddPosts = () => {
     const [title, setTitle] = useState('')
     const [image, setImage] = useState('')
     const [content, setContent] = useState('')
-    const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")))
+    const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("userLokiProfile")))
 
     const handlePost = () => {
         const body = {
