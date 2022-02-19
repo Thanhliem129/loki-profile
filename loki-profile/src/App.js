@@ -5,10 +5,14 @@ import Home from './screens/home';
 import {routes} from './routes/index'
 import {routesAuth} from './routes/auth'
 import 'bootstrap/dist/css/bootstrap.css';
+import { getUser } from './redux/auth/action';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const App = () => {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(null || JSON.parse(localStorage.getItem("user")));
+
+  // console.log(currentUser.id)
 
   return(
     <Fragment >

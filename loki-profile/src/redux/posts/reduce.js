@@ -1,4 +1,4 @@
-import { GET_POSTS } from "../type";
+import { GET_POSTS, POST_POSTS } from "../type";
 
 const initialState = {
     listPosts: [],
@@ -11,7 +11,10 @@ const posts = (state = initialState, action) => {
         ...state,
         listPosts: action.data
       }
-    
+      case POST_POSTS:
+        return {
+          ...state,
+        }
     default: {
       return state;
     }
