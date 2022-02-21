@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 const App = () => {
-  const [currentUser, setCurrentUser] = useState(null || JSON.parse(localStorage.getItem("user")));
+  const [currentUser, setCurrentUser] = useState(null || JSON.parse(localStorage.getItem("userLokiProfile")));
 
   // console.log(currentUser.id)
 

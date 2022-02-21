@@ -7,7 +7,6 @@ const SignUp = () => {
 
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
-    const [location, setLocation] = useState(false)
 
     const handleSignUp = () => {
         const body = {
