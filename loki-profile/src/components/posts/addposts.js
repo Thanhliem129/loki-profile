@@ -18,11 +18,7 @@ const AddPosts = () => {
             content: content
         }
         if(currentUser){
-            console.log(currentUser.id)
             dispatch(PostPosts(currentUser.id, body))
-            setTimeout(() => {
-                window.location.href = `/posts`
-            }, 200);
         }
         
     }

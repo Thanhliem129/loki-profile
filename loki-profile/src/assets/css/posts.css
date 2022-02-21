@@ -1,0 +1,28 @@
+.item-posts{
+
+}
+.avatar-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 5px black;
+}
+.create-date{
+  font-size: 14px;
+}
+.name-user-post{
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.post-image{
+  width: 60%;
+}
+.post-title{
+  font-size: 16px;
+  color: #444;
+  text-transform: capitalize;
+}
+.post-content{
+
+}
