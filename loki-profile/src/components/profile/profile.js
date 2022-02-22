@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import {IoIosAdd, IoMdCreate} from 'react-icons/io'
+import {IoIosAdd, IoMdMore} from 'react-icons/io'
 import moment from 'moment'
 import '../../assets/css/profile.css'
 import { deletePosts, getPosts } from '../../redux/posts/action'
-import {IoMdMore} from 'react-icons/io'
 
 const Profile = () => {
     const dispatch = useDispatch()
@@ -24,7 +23,7 @@ const Profile = () => {
         <div className='background-profile'>
             <div className='bg-dark'>
                 <div className='d-flex justify-content-center container imagecard'>
-                    <img src={currentUser.imageCard} className='image-card' alt='image-card' />
+                    <img src={currentUser.imageCard} className='image-card' alt='imagesss-card' />
                 </div>
                 <div className='container py-4'>
                     <div className='row'>
@@ -107,7 +106,7 @@ const ItemPost = (props) =>  {
         <div className='item-posts mt-2 p-4 bg-dark rounded-3' key={index}>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex align-items-center'>
-                    <img src={currentUser.avatar} className='avatar-image' />
+                    <img src={currentUser.avatar} className='avatar-image' alt='potssss' />
                     <div className='mx-2 text-white'>
                         <div className='name-user-post'>{currentUser.name}</div>
                         <div className='create-date'>{moment(item.createAt).format('DD/MM/YYYY')}</div>
@@ -138,6 +137,7 @@ const ItemPost = (props) =>  {
                 <img 
                     src={item.image} 
                     className='post-image '
+                    alt='post-imgasssss'
                 />
                 <div className='post-title mt-3  text-white'>
                     {item.title} 

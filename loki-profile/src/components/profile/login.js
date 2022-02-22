@@ -33,7 +33,7 @@ const Login = () => {
 
     useEffect(()=> {
         dispatch(getUser())
-      },[])
+    },[])
     return (
         <div className='background-profile'>
             <div className='container'>
