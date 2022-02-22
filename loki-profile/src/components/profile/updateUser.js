@@ -136,7 +136,7 @@ const UpdateUser = () => {
               />
             </div>
             <div className='col-md-2'>
-              <img className='image-card-update' src={imageCard} alt='image-card-update' />
+              <img className='image-card-update' src={imageCard} alt='card-update' />
             </div>
           </div>
          

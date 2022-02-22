@@ -56,7 +56,7 @@ const AddPosts = () => {
 
                     <div>
                         <div className='d-block'>
-                            <img src={image} className='image-add-post' alt='image-add-posts' />
+                            <img src={image} className='image-add-post' alt='imagesss-add-posts' />
                         </div>
                         <div className='row align-items-center my-3'>
                             <label className='col-form-label text-white col-md-3'>Tiêu đề</label>

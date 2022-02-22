@@ -59,7 +59,7 @@ const ItemPost = (props) =>  {
         <div className='item-posts mt-2 p-4 bg-dark rounded-3' key={index}>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex align-items-center'>
-                    <img src={currentUser.avatar} className='avatar-image' />
+                    <img src={currentUser.avatar} className='avatar-image' alt='possss' />
                     <div className='mx-2 text-white'>
                         <div className='name-user-post'>{currentUser.name}</div>
                         <div className='create-date'>{moment(item.createAt).format('DD/MM/YYYY')}</div>
@@ -90,6 +90,7 @@ const ItemPost = (props) =>  {
                 <img 
                     src={item.image} 
                     className='post-image '
+                    alt='posttttt'
                 />
                 <div className='post-title mt-3  text-white'>
                     {item.title} 
