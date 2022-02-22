@@ -7,6 +7,12 @@ export const _getUser = async (body) => {
 };
 
 export const _signUp = async (body) => {
-const request = await axios.post(`${urlBase}/user`,body);
-return window.location.replace('/login');
+    const request = await axios.post(`${urlBase}/user`,body);
+    return window.location.replace('/login');
 };
+
+export const _updateUser = async (id, body) => {
+    const request = await axios.put(`${urlBase}/user/${id}`, body)
+    return request.data
+    // ;
+}

@@ -1,18 +1,14 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
-import { CSSTransition,TransitionGroup } from 'react-transition-group';
-import Home from './screens/home';
+import React, { Fragment,useState } from 'react'
+import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom'
+import { CSSTransition,TransitionGroup } from 'react-transition-group'
+import Home from './screens/home'
 import {routes} from './routes/index'
 import {routesAuth} from './routes/auth'
-import 'bootstrap/dist/css/bootstrap.css';
-import { getUser } from './redux/auth/action';
-import { useDispatch, useSelector } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(null || JSON.parse(localStorage.getItem("userLokiProfile")));
-
-  // console.log(currentUser.id)
 
   return(
     <Fragment >

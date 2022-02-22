@@ -1,11 +1,11 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import { withRouter } from "react-router-dom";
 
 const Home = ({ children }) => {
 
-  const [currentUser, setCurrentUser] = useState(null);
+  // const [currentUser, setCurrentUser] = useState(null);
 
   return (
     <Fragment>

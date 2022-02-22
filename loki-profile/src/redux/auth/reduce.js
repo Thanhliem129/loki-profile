@@ -1,4 +1,9 @@
-import { GET_USER, SIGN_UP, LOGIN } from "../type";
+import { 
+  GET_USER, 
+  SIGN_UP, 
+  // LOGIN, 
+  UPDATE_USER 
+} from "../type";
 
 
 const initialState = {
@@ -14,9 +19,13 @@ const auth = (state = initialState, action) => {
         listUser: action.data
       }
     case SIGN_UP: 
-    return {
+      return {
         ...state
-    }
+      }
+    case UPDATE_USER: 
+      return {
+        ...state
+      }
     default: {
       return state;
     }

@@ -1,6 +1,4 @@
-.item-posts{
 
-}
 .avatar-image{
   width: 40px;
   height: 40px;
@@ -16,13 +14,63 @@
   font-weight: bold;
 }
 .post-image{
-  width: 60%;
+  width: 100%;
+  height: 600px !important;
 }
 .post-title{
   font-size: 16px;
   color: #444;
   text-transform: capitalize;
 }
-.post-content{
+.label-add{
+  color: burlywood;
+  font-size: 28px;
+  font-weight: bold;
+}
+.image-add-post{
+  width: 800px
+}
+.input-linkanh{
+  border: 1px solid #3590de;
+  border-radius: 0;
 
+}
+.input-linkanh:focus{
+  border: 1px solid #3590de;
+  box-shadow: none;
+  outline: none;
+
+}
+.btn-add-image{
+  border: #3590de;
+  background-color: #3590de;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px;
+}
+.image-posts-back{
+  height: 600px;
+  background-color: #cccccc80;
+}
+.modal-title{
+  font-size: 26px;
+  font-weight: bold;
+}
+.edit-post-view{
+  position: absolute;
+  z-index: 10;
+  background-color: #cccccc;
+  padding: 10px;
+  width: 150px;
+}
+.edit-post-field{
+  position: relative;
+}
+.btn-edit-delete{
+  border: #3590de;
+  background-color: #3590de;
+  border-radius: 0;
+  color: #fff;
+  padding: 6px;
+  width: 130px;
 }
