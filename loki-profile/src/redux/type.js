@@ -7,3 +7,4 @@ export const DELETE_POSTS = 'DELETE_POSTS';
 export const GET_USER = 'GET_USER'
 export const SIGN_UP = 'SIGN_UP'
 export const LOGIN = 'LOGIN'
+export const UPDATE_USER = 'UPDATE_USER'

@@ -23,13 +23,34 @@ export const getPosts = (userID) => async dispatch => {
   };
 
 export const PostPosts = (userID, body) => async dispatch => {
-  console.log(userID, body)
+  // console.log(userID, body)
   try {
-      _postPosts(userID, body).then( async (res) => {
-        console.log('oki')
+      _postPosts(userID, body).then( async(res) => {
+        // console.log('oki')
       return dispatch({type: POST_POSTS, data: res})
     })
   } catch (error) {
     throw new Error(error);
   }
 };
+
+export const updatePosts = (userId, id, body) => async dispatch => {
+  try {
+    _updatePosts(userId, id, body).then( async(res) => {
+      window.location.replace('/posts')
+      return dispatch({type: UPDATE_POSTS, data: res})
+    })
+  } catch (error) {
+    throw new Error(error);
+  }
+}
+
+export const deletePosts = (userId, id) => async dispatch => {
+  try {
+    _deletePosts(userId, id).then( async(res) => {
+      return dispatch({type: DELETE_POSTS, data: res})
+    })
+  } catch (error) {
+    
+  }
+}

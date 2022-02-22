@@ -1,0 +1,44 @@
+.background-profile{
+  background-image: url("https://i.pinimg.com/originals/2c/84/5a/2c845a66b8ad2a8aafd288bdc16cd459.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+.image-card{
+  width: 100%;
+  max-height: 400px;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.avatar-image-profile{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+.name-profile{
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+
+}
+.background-dark{
+  background-color: transparent;
+}
+.profile-field{
+  border-radius: 10px;
+}
+.profile-item-label{
+  font-size: 16px;
+  font-weight: bold;
+}
+.avatar-update{
+  height: 150px;
+  width: 150px;
+}
+.image-card-update{
+  height: 150px;
+  width: 150px;
+}

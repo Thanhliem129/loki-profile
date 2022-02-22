@@ -11,9 +11,9 @@ const Header = () => {
         }, 200);
     }
     return (
-        <div className='bg-info'>
+        <div className='bg-dark'>
             <div className='container'>
-                <nav className="nav nav-tabs nav-stacked justify-content-between">
+                <nav className="nav nav-tabs nav-stacked justify-content-between py-2 border-0">
                     <div className='d-flex'>
                         <Link className="nav-link text-white" to="/">Home page</Link>
                         {
@@ -36,7 +36,7 @@ const Header = () => {
                         {
                             currentUser && (
                                 <div className='d-flex'>
-                                    <button className='btn btn-info text-white' onClick={handleLogout}>LogOut</button>
+                                    <button className='btn btn-dark text-white' onClick={handleLogout}>LogOut</button>
                                 </div>
                                 
                             )
