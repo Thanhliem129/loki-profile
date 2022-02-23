@@ -27,11 +27,11 @@ const UpdatePosts = () => {
 
         <div className='bg-dark p-4 rounded-3'>
           <div className='row algin-align-items-center'>
-            <button type="button" class="btn-add-image bg-transparent my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" className="btn-add-image bg-transparent my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <img className='image-posts-back' alt='imagesss-update' src={image} />
             </button>
 
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className='text-center my-2 modal-title'>
