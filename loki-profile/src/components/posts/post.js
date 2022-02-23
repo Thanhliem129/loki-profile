@@ -36,7 +36,7 @@ const Posts = () => {
                             <ItemPost 
                                 currentUser={currentUser} 
                                 item={item} 
-                                index={index} 
+                                key={index} 
                                 handelDelete={() => handelDelete(item.userId, item.id)}
                             />
                         ))
@@ -51,12 +51,12 @@ const Posts = () => {
 export default Posts
 
 const ItemPost = (props) =>  {
-    const {currentUser, item, index, handelDelete} = props;
+    const {currentUser, item, handelDelete} = props;
     const [show, setShow] = useState(false)
 
 
     return (
-        <div className='item-posts mt-2 p-4 bg-dark rounded-3' key={index}>
+        <div className='item-posts mt-2 p-4 bg-dark rounded-3'>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex align-items-center'>
                     <img src={currentUser.avatar} className='avatar-image' alt='possss' />
@@ -87,17 +87,17 @@ const ItemPost = (props) =>  {
             </div>
             
             <div className='mt-4  text-white'>
+                <div className='post-title text-white'>
+                    {item.title} 
+                </div>
+                <div className='post-content mb-3'>
+                    {item.content}
+                </div>
                 <img 
                     src={item.image} 
                     className='post-image '
                     alt='posttttt'
                 />
-                <div className='post-title mt-3  text-white'>
-                    {item.title} 
-                </div>
-                <div className='post-content'>
-                    {item.content}
-                </div>
             </div>
         </div>
     )

@@ -84,13 +84,13 @@ const HomePage = () => {
                         <div className='col-md-4 justify-content-center'>
                             <div className='d-flex  justify-content-center'>
                                 <img 
-                                    src="https://tophinhanh.com/wp-content/uploads/2022/01/21_anh-squid-game-4k.jpg"
+                                    src="https://doithuongpro.com/wp-content/uploads/2021/08/hinh-nen-pubg-16.jpg"
                                     alt="Italian Trulli" 
                                     className='my-degree-image'/> 
                             </div>
                             
                             <div className='text-center mt-4'>
-                                <label className='my-degree-title'>PUGB</label>
+                                <label className='my-degree-title'>PUBG</label>
                                 <label className='my-degree-content d-block'>ID: </label>
                             </div>
                         </div>
