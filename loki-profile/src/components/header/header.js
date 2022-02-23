@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 
 const Header = () => {
-    const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("userLokiProfile")));
+    const currentUser= localStorage.getItem("userLokiProfile")
     const handleLogout = () => {
         localStorage.removeItem('userLokiProfile');
         setTimeout(() => {
-            window.location.href = `/`
+            window.location.href = `/login`
         }, 200);
     }
     return (
@@ -28,10 +28,7 @@ const Header = () => {
                     </div>
                     <div className='d-flex'>
                         {
-                            !currentUser &&  <Link className="nav-link text-white " to="/login">Login</Link>
-                        }
-                        {
-                            !currentUser && <Link className="nav-link  text-white" to="/sign-up">Sign up</Link>
+                            !currentUser &&  <Link className="nav-link text-white " to="/login">Login / SignUp</Link>
                         }
                         {
                             currentUser && (
