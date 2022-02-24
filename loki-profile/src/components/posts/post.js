@@ -61,7 +61,7 @@ const ItemPost = (props) =>  {
                 <div className='d-flex align-items-center'>
                     <img src={currentUser.avatar} className='avatar-image' alt='possss' />
                     <div className='mx-2 text-white'>
-                        <div className='name-user-post'>{currentUser.name}</div>
+                        <div className='name-user-post'>{currentUser.fullName}</div>
                         <div className='create-date'>{moment(item.createAt).format('DD/MM/YYYY')}</div>
                     </div>
                 </div>

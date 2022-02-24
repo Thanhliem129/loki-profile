@@ -29,7 +29,7 @@ const Profile = () => {
                     <div className='row'>
                         <div className='d-flex align-items-center col-md-5'>
                             <img src={currentUser.avatar} className='avatar-image-profile' alt='avatar' />
-                            <label className='name-profile mx-4'>{currentUser && currentUser.name}</label>
+                            <label className='name-profile mx-4'>{currentUser && currentUser.fullName}</label>
                         </div>
                         <div className='col-md-7 align-self-center d-flex justify-content-end'>
                             <div className=''>
@@ -108,7 +108,7 @@ const ItemPost = (props) =>  {
                 <div className='d-flex align-items-center'>
                     <img src={currentUser.avatar} className='avatar-image' alt='potssss' />
                     <div className='mx-2 text-white'>
-                        <div className='name-user-post'>{currentUser.name}</div>
+                        <div className='name-user-post'>{currentUser.fullName}</div>
                         <div className='create-date'>{moment(item.createAt).format('DD/MM/YYYY')}</div>
                     </div>
                 </div>
