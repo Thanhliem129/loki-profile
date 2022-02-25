@@ -42,3 +42,82 @@
   height: 150px;
   width: 150px;
 }
+
+
+@media screen and (max-width: 1024px){
+  .image-card{
+    width: 100%;
+    max-height: 400px;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .avatar-image-profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+  }
+  .profile-item-label{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .name-profile{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 991px){
+  .image-card{
+    width: 100%;
+    max-height: 400px;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .avatar-image-profile{
+    width: 160px;
+    height: 160px;
+    border-radius: 100px;
+  }
+  .profile-item-label{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .name-profile{
+    font-size: 28px;
+  }
+  .btn-add-image{
+    padding:7px 10px 7px 10px !important;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 768px){
+  .image-card{
+    width: 100%;
+    max-height: 400px;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .avatar-image-profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+  }
+  .profile-item-label{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .name-profile{
+    font-size: 28px;
+  }
+  .btn-add-image{
+    padding:7px 10px 7px 10px !important;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 576px){
+  
+}
+@media screen and (max-width: 320px){
+
+}
