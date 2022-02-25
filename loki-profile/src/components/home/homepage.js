@@ -16,7 +16,7 @@ const HomePage = () => {
                             delay={0}
                         >
                             <label className='text-center text-white fw-bolder name-title'>
-                                THANH . 
+                                THANH. 
                             </label>
                         </ScrollAnimation>
                         <ScrollAnimation
@@ -25,7 +25,7 @@ const HomePage = () => {
                             duration={1.5}
                             delay={0}
                         >
-                            <label className='text-danger fw-bolder name-title mx-4'>LIEM</label>
+                            <label className='text-danger fw-bolder name-title'>LIEM</label>
                         </ScrollAnimation>
                     </div>
                     <ScrollAnimation
@@ -46,7 +46,7 @@ const HomePage = () => {
             <div className='middle'>
                 <div className='container'> 
                     <div className='row'>
-                        <div className='col-md-6 d-flex justify-content-center'>
+                        <div className='col-md-6 col-sm-6 d-flex justify-content-center'>
                             <ScrollAnimation 
                                 animateIn='fadeInLeft'
                                 duration={1}
@@ -59,7 +59,7 @@ const HomePage = () => {
                             </ScrollAnimation>
                             
                         </div>
-                        <div className='col-md-5'>
+                        <div className='col-md-5 col-sm-6 resText'>
                             <ScrollAnimation 
                                 animateIn='fadeIn'
                                 duration={2}
@@ -80,7 +80,7 @@ const HomePage = () => {
             <div className='middle1'>
                 <div className='container'> 
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-md-6 col-sm-6 resText'>
                             <ScrollAnimation 
                                 animateIn='fadeIn'
                                 duration={2}
@@ -94,7 +94,7 @@ const HomePage = () => {
                                 <button className='btn-connect mt-3'>About more</button>
                             </ScrollAnimation>
                         </div>
-                        <div className='col-md-5 d-flex justify-content-center'>
+                        <div className='col-md-5 col-sm-6 d-flex justify-content-center'>
                             <ScrollAnimation 
                                 animateIn='fadeInRight'
                                 duration={1}
@@ -112,27 +112,26 @@ const HomePage = () => {
             <div className='middle2'>
                 <div className='container'> 
                     <div className='row '>
-                        <div className='col-md-4'>
-                        <ScrollAnimation 
-                            animateIn='flipInY'
-                            animateOut='flipOutY'
-                            duration={1}
-                        >
-                            <div className='d-flex  justify-content-center'>
-                                <img 
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_UjBHJouKg2ZIW7DRdKGF_9B_UPa_t2qZg&usqp=CAU"
-                                    alt="Italian Trulli" 
-                                    className='my-degree-image'/>
-                            </div>
-                            
-                            <div className='text-center mt-4'>
-                                <label className='my-degree-title'>Liên quân mobie</label>
-                                <label className='my-degree-content d-block'>ID: </label>
-                            </div>
-                        </ScrollAnimation>
-                            
+                        <div className='col-md-4 col-sm-4'>
+                            <ScrollAnimation 
+                                animateIn='flipInY'
+                                animateOut='flipOutY'
+                                duration={1}
+                            >
+                                <div className='d-flex  justify-content-center'>
+                                    <img 
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE_UjBHJouKg2ZIW7DRdKGF_9B_UPa_t2qZg&usqp=CAU"
+                                        alt="Italian Trulli" 
+                                        className='my-degree-image'/>
+                                </div>
+                                
+                                <div className='text-center mt-4'>
+                                    <label className='my-degree-title'>Liên quân mobie</label>
+                                    <label className='my-degree-content d-block'>ID: </label>
+                                </div>
+                            </ScrollAnimation>
                         </div>
-                        <div className='col-md-4 justify-content-center'>
+                        <div className='col-md-4 col-sm-4 justify-content-center'>
                             <ScrollAnimation 
                                 animateIn='flipInY'
                                 animateOut='flipOutY'
@@ -150,9 +149,8 @@ const HomePage = () => {
                                     <label className='my-degree-content d-block'>ID: </label>
                                 </div>
                             </ScrollAnimation>
-                            
                         </div>
-                        <div className='col-md-4 justify-content-center'>
+                        <div className='col-md-4 col-sm-4 justify-content-center'>
                             <ScrollAnimation 
                                 animateIn='flipInY'
                                 animateOut='flipOutY'
@@ -164,7 +162,6 @@ const HomePage = () => {
                                         alt="Italian Trulli" 
                                         className='my-degree-image'/>
                                 </div>
-                                
                                 <div className='text-center mt-4'>
                                     <label className='my-degree-title'>Age Of Z</label>
                                     <label className='my-degree-content d-block'>Sever 192</label>
