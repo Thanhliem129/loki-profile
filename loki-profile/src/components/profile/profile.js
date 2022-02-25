@@ -26,18 +26,18 @@ const Profile = () => {
                     <img src={currentUser.imageCard} className='image-card' alt='imagesss-card' />
                 </div>
                 <div className='container py-4'>
-                    <div className='row'>
-                        <div className='d-flex align-items-center col-md-5'>
+                    <div className='row justify-content-center'>
+                        <div className='d-flex align-items-center  col-sm-7'>
                             <img src={currentUser.avatar} className='avatar-image-profile' alt='avatar' />
                             <label className='name-profile mx-4'>{currentUser && currentUser.fullName}</label>
                         </div>
-                        <div className='col-md-7 align-self-center d-flex justify-content-end'>
+                        <div className='col-md-5 col-sm-5 align-self-center d-flex justify-content-end'>
                             <div className=''>
                                 <Link className='text-decoration-none' to={'/add-posts'}>
                                     <button className='btn-add-image d-block '><IoIosAdd />Thêm bài viết</button>
                                 </Link>
                                 <Link className='text-decoration-none' to={'/update-user'}>
-                                    <button className='btn-add-image my-2 d-block'><IoIosAdd />Chỉnh sửa trang cá nhân</button>
+                                    <button className='btn-add-image my-2 d-block'><IoIosAdd />Sửa trang cá nhân</button>
                                 </Link>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const Profile = () => {
             <div className='background-dark'>
                 <div className='container'>
                     <div className='row py-4'>
-                        <div className='col-md-4'>
+                        <div className='col-md-4 mb-2'>
                             <div className='bg-dark profile-field p-4'>
                                 <label className='text-white profile-item-label'>Giới thiệu</label>
                                 <div className='text-center'>
@@ -74,7 +74,7 @@ const Profile = () => {
                             </div>
                         </div>
                         <div className='col-md-8 '>
-                            <div className='profile-field bg-dark p-4'>
+                            <div className='profile-field p-4  bg-dark'>
                             {
                                 listPosts && 
                                 listPosts.map((item, index) => (
@@ -103,7 +103,7 @@ const ItemPost = (props) =>  {
     const [show, setShow] = useState(false)
     
     return (
-        <div className='item-posts mt-2 p-4 bg-dark rounded-3'>
+        <div className='item-posts mt-2 p-4 bg-dark rounded-3 '>
             <div className='d-flex justify-content-between'>
                 <div className='d-flex align-items-center'>
                     <img src={currentUser.avatar} className='avatar-image' alt='potssss' />
