@@ -20,6 +20,7 @@ const Header = () => {
                             currentUser && (
                                 <div className='d-flex'>
                                     <Link className="nav-link text-white" to="/posts">Post</Link>
+                                    <Link className="nav-link text-white" to="/my-movie">My movie</Link>
                                     <Link className="nav-link text-white" to="/profile">Profile</Link>
                                 </div>
                                 
