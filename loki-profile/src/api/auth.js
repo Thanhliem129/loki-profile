@@ -1,8 +1,8 @@
 import axios from "axios";
-const urlBase ='https://620cf2e9b5736325939f99f1.mockapi.io'
+const urlBase ='https://62070fbb92dd6600171c0cc1.mockapi.io/api/v1/'
 
 export const _getUser = async (body) => {
-    const request = await axios.get(`${urlBase}/user`, body);
+    const request = await axios.get(`${urlBase}/users`, body);
     return request.data;
 };
 
@@ -12,7 +12,7 @@ export const _signUp = async (body) => {
 };
 
 export const _updateUser = async (id, body) => {
-    const request = await axios.put(`${urlBase}/user/${id}`, body)
+    const request = await axios.put(`${urlBase}/users/${id}`, body)
     return request.data
     // ;
 }
