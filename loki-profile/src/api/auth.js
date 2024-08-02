@@ -13,6 +13,6 @@ export const _signUp = async (body) => {
 
 export const _updateUser = async (id, body) => {
     const request = await axios.put(`${urlBase}/user/${id}`, body)
-    return request.data
+    return request.data 
     // ;
 }
