@@ -26,6 +26,7 @@ const Login = () => {
 	}
 
 	const handleLogin = () => {
+		console.log(listUser)
 		const body = {
 			name: name,
 			password: password,
